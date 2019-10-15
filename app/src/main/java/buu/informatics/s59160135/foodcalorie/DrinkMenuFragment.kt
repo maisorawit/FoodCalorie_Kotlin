@@ -7,49 +7,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.FragmentActivity
+import buu.informatics.s59160135.foodcalorie.databinding.FragmentDrinkMenuBinding
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
 
-class FoodMenuFragment : Fragment() {
+class DrinkMenuFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentFoodMenuBinding>(inflater,
-            R.layout.fragment_food_menu, container, false)
+        val binding = DataBindingUtil.inflate<FragmentDrinkMenuBinding>(inflater,
+            R.layout.fragment_drink_menu, container, false)
         return binding.root
     }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

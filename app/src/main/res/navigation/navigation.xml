@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
     app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="buu.informatics.s59160135.foodcalorie.HomeFragment"
-        android:label="HomeFragment" >
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
         <action
             android:id="@+id/action_homeFragment_to_foodMenuFragment"
             app:destination="@id/foodMenuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drinkMenuFragment"
+            app:destination="@id/drinkMenuFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/foodMenuFragment"
         android:name="buu.informatics.s59160135.foodcalorie.FoodMenuFragment"
-        android:label="FoodMenuFragment" />
+        android:label="FoodMenuFragment"
+        tools:layout="@layout/fragment_food_menu" />
+    <fragment
+        android:id="@+id/drinkMenuFragment"
+        android:name="buu.informatics.s59160135.foodcalorie.DrinkMenuFragment"
+        android:label="DrinkMenuFragment" />
+
 </navigation>

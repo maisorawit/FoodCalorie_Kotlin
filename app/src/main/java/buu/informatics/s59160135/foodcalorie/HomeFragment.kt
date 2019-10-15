@@ -22,9 +22,17 @@ class HomeFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentHomeBinding>(inflater,
             R.layout.fragment_home, container, false)
+
         binding.buttonFood.setOnClickListener{view ->
             view.findNavController().navigate(R.id.action_homeFragment_to_foodMenuFragment)
         }
+
+        binding.buttonDrink.setOnClickListener{view ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_drinkMenuFragment)
+        }
+
+
+
         return binding.root
     }
 
