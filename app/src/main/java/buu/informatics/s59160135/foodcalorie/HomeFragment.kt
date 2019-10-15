@@ -31,8 +31,6 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_homeFragment_to_drinkMenuFragment)
         }
 
-
-
         return binding.root
     }
 

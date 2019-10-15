@@ -10,26 +10,54 @@
         tools:context=".FoodMenuFragment">
 
         <Button
-            android:id="@+id/button_puff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            android:text="Puff"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/button_boil"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/food_boil"
+            android:drawingCacheQuality="high"
+            android:hapticFeedbackEnabled="false"
+            app:layout_constraintEnd_toStartOf="@+id/button_stir"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
-            android:text="boil"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/button_stir"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/food_stir"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_boil"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_boil" />
+
+        <Button
+            android:id="@+id/button_grill"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/food_grill"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_simmer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_simmer" />
+
+        <Button
+            android:id="@+id/button_simmer"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/food_simmer"
+            app:layout_constraintEnd_toStartOf="@+id/button_grill"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_puff" />
+            app:layout_constraintTop_toBottomOf="@+id/button_boil" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 

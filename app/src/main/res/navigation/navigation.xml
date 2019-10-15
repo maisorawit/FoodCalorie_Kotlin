@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="buu.informatics.s59160135.foodcalorie.HomeFragment"
-        android:label="HomeFragment"
+        android:label="Food Calorie"
         tools:layout="@layout/fragment_home">
 
         <action
@@ -22,11 +22,22 @@
     <fragment
         android:id="@+id/foodMenuFragment"
         android:name="buu.informatics.s59160135.foodcalorie.FoodMenuFragment"
-        android:label="FoodMenuFragment"
-        tools:layout="@layout/fragment_food_menu" />
+        android:label="Food Menu"
+        tools:layout="@layout/fragment_food_menu">
+        <action
+            android:id="@+id/action_foodMenuFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
     <fragment
         android:id="@+id/drinkMenuFragment"
         android:name="buu.informatics.s59160135.foodcalorie.DrinkMenuFragment"
-        android:label="DrinkMenuFragment" />
+        android:label="Drink Menu"
+        tools:layout="@layout/fragment_drink_menu" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="buu.informatics.s59160135.foodcalorie.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+
 
 </navigation>
