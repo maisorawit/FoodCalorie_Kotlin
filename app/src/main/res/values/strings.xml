@@ -3,4 +3,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_content">สวัสดีครับ</string>
+    <string name="text_simmer">แกง</string>
+    <string name="text_grill">ย่าง</string>
+    <string name="text_boil">ต้ม</string>
+    <string name="text_stir">ผัด</string>
 </resources>

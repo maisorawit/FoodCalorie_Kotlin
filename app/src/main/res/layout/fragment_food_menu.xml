@@ -57,7 +57,66 @@
             app:layout_constraintEnd_toStartOf="@+id/button_grill"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_boil" />
+
+        <TextView
+            android:id="@+id/textView_simmer"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/text_simmer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView_grill"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_simmer" />
+
+        <TextView
+            android:id="@+id/textView_grill"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/text_grill"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/text_nameicon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView_simmer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_simmer" />
+
+        <TextView
+            android:id="@+id/textView_boil"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="@string/text_boil"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/text_nameicon"
+            app:layout_constraintEnd_toStartOf="@+id/textView_stir"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_boil" />
+
+        <TextView
+            android:id="@+id/textView_stir"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="@string/text_stir"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="@dimen/text_nameicon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView_boil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_boil" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 
