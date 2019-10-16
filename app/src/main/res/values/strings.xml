@@ -8,4 +8,9 @@
     <string name="text_grill">ย่าง</string>
     <string name="text_boil">ต้ม</string>
     <string name="text_stir">ผัด</string>
+    <string name="text_juice">น้ำผลไม้</string>
+    <string name="text_soda">น้ำอัดลม</string>
+    <string name="text_coffee">กาแฟ</string>
+    <string name="text_alcohol">แอลกอฮอล์</string>
+    <string name="text_icon">Food Calorie</string>
 </resources>

@@ -32,7 +32,11 @@
         android:id="@+id/drinkMenuFragment"
         android:name="buu.informatics.s59160135.foodcalorie.DrinkMenuFragment"
         android:label="Drink Menu"
-        tools:layout="@layout/fragment_drink_menu" />
+        tools:layout="@layout/fragment_drink_menu" >
+        <action
+            android:id="@+id/action_drinkMenuFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="buu.informatics.s59160135.foodcalorie.ResultFragment"
