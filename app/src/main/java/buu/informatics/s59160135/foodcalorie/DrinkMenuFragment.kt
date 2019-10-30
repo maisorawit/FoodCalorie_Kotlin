@@ -10,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentDrinkMenuBinding
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
+import com.google.android.material.snackbar.Snackbar
 
 class DrinkMenuFragment : Fragment() {
 
@@ -36,11 +37,18 @@ class DrinkMenuFragment : Fragment() {
             view.findNavController().navigate(R.id.action_drinkMenuFragment_to_resultFragment)
         }
 
-
-
-
-
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var snack = view?.let { Snackbar.make(it, "เมนูเครื่องดื่ม", Snackbar.LENGTH_LONG) }
+        snack?.show()
+
+//        val toast = Toast.makeText(context, "เมนูอาหาร", Toast.LENGTH_SHORT)
+//        toast.show()
+    }
+
 
 }
