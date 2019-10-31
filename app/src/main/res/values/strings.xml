@@ -14,4 +14,7 @@
     <string name="about">About</string>
     <string name="button_food_menu">อาหาร</string>
     <string name="button_drink_menu">เครื่องดื่ม</string>
+    <string name="text_share"></string>
+    <string name="share_message">https://play.google.com/store/apps/details?id=app.rojer.calories %1$s</string>
 </resources>
+<!--    %1$s-->
