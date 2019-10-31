@@ -44,7 +44,7 @@
         tools:layout="@layout/fragment_result" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="buu.informatics.s59160135.foodcalorie.aboutFragment"
+        android:name="buu.informatics.s59160135.foodcalorie.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
 

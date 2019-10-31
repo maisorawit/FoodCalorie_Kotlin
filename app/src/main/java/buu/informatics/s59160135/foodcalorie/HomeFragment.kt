@@ -2,6 +2,7 @@ package buu.informatics.s59160135.foodcalorie
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
@@ -10,6 +11,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentHomeBinding
+import kotlin.math.log
 
 /**
  * A simple [Fragment] subclass.
@@ -25,14 +27,17 @@ class HomeFragment : Fragment() {
             R.layout.fragment_home, container, false
         )
 
-        binding.buttonFood.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_homeFragment_to_foodMenuFragment)
+        binding.apply {
+            buttonFood.setOnClickListener { view ->
+                view.findNavController().navigate(R.id.action_homeFragment_to_foodMenuFragment)
+            }
+            buttonDrink.setOnClickListener { view ->
+                view.findNavController().navigate(R.id.action_homeFragment_to_drinkMenuFragment)
+            }
         }
 
-        binding.buttonDrink.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_homeFragment_to_drinkMenuFragment)
-        }
         setHasOptionsMenu(true)
+
         return binding.root
     }
 
@@ -44,6 +49,11 @@ class HomeFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item!!,
             view!!.findNavController()) || super.onOptionsItemSelected(item)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("Start","Start")
     }
 
 }

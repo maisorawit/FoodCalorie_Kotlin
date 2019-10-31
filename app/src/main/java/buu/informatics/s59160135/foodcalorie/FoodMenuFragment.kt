@@ -50,6 +50,7 @@ class FoodMenuFragment : Fragment() {
 
         var snack = view?.let { Snackbar.make(it, "เมนูอาหาร", Snackbar.LENGTH_LONG) }
         snack?.show()
+
 //        val toast = Toast.makeText(context, "เมนูอาหาร", Toast.LENGTH_LONG)
 //        toast.show()
     }

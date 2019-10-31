@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Food Calorie</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_content">สวัสดีครับ</string>
     <string name="text_simmer">แกง</string>
@@ -13,4 +11,7 @@
     <string name="text_coffee">กาแฟ</string>
     <string name="text_alcohol">แอลกอฮอล์</string>
     <string name="text_icon">Food Calorie</string>
+    <string name="about">About</string>
+    <string name="button_food_menu">อาหาร</string>
+    <string name="button_drink_menu">เครื่องดื่ม</string>
 </resources>
