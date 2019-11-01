@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Food Calorie</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text_content">สวัสดีครับ</string>
+    <string name="text_content">เป็นแอพพลิเคชั่นสำหรับดูแคลอรี่ในอาหาร เเละเครื่องดื่มเเต่ละชนิด</string>
     <string name="text_simmer">แกง</string>
     <string name="text_grill">ย่าง</string>
     <string name="text_boil">ต้ม</string>
@@ -16,5 +16,7 @@
     <string name="button_drink_menu">เครื่องดื่ม</string>
     <string name="text_share"></string>
     <string name="share_message">https://play.google.com/store/apps/details?id=app.rojer.calories %1$s</string>
+    <string name="text_name_about">Food Calorie</string>
+    <string name="app_icon">foodicon</string>
 </resources>
 <!--    %1$s-->

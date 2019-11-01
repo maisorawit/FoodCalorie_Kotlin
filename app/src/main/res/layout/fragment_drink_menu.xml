@@ -8,8 +8,8 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgmenu"
-        tools:context=".DrinkMenuFragment">
+        android:background="@drawable/bg_menu_drink"
+        tools:context=".Screens.DrinkMenu.DrinkMenuFragment">
 
         <Button
             android:id="@+id/button_juice"
@@ -68,6 +68,7 @@
             android:gravity="center"
             android:text="@string/text_soda"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_nameicon"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView_juice"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,6 +83,7 @@
             android:gravity="center"
             android:text="@string/text_juice"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_nameicon"
             app:layout_constraintEnd_toStartOf="@+id/textView_soda"
             app:layout_constraintHorizontal_bias="0.5"
@@ -96,6 +98,7 @@
             android:gravity="center"
             android:text="@string/text_coffee"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_nameicon"
             app:layout_constraintEnd_toStartOf="@+id/textView_alcohol"
             app:layout_constraintHorizontal_bias="0.5"
@@ -111,6 +114,7 @@
             android:gravity="center"
             android:text="@string/text_alcohol"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_nameicon"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView_coffee"
             app:layout_constraintEnd_toEndOf="parent"
