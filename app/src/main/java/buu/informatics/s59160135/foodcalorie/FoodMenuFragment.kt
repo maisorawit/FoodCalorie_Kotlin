@@ -9,8 +9,10 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.fragment_food_menu.*
 
 class FoodMenuFragment : Fragment() {
 
@@ -36,8 +38,8 @@ class FoodMenuFragment : Fragment() {
                 view.findNavController().navigate(R.id.action_foodMenuFragment_to_resultFragment)
             }
 
-            buttonGrill.setOnClickListener{view ->
-                view.findNavController().navigate(R.id.action_foodMenuFragment_to_resultFragment)
+            buttonGrill.setOnClickListener{
+                goToIngrediantPage()
             }
         }
 
@@ -89,6 +91,11 @@ class FoodMenuFragment : Fragment() {
             R.id.share -> shareSuccess()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun goToIngrediantPage() {
+        val action = FoodMenuFragmentDirections.actionFoodMenuFragmentToResultFragment(grill = textView_grill.text.toString())
+        NavHostFragment.findNavController(this).navigate(action)
     }
 
 

@@ -2,6 +2,7 @@
 
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -10,6 +11,15 @@
         tools:context=".ResultFragment"
         >
 
+        <TextView
+            android:id="@+id/text_menuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/null_string"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

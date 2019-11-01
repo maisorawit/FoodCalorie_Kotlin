@@ -18,5 +18,6 @@
     <string name="share_message">https://play.google.com/store/apps/details?id=app.rojer.calories %1$s</string>
     <string name="text_name_about">Food Calorie</string>
     <string name="app_icon">foodicon</string>
+    <string name="null_string" />
 </resources>
 <!--    %1$s-->
