@@ -26,8 +26,14 @@ class ResultFragment : Fragment() {
         )
 
         var args = ResultFragmentArgs.fromBundle(arguments!!)
+
         Log.i("check", args.grill)
+
         binding.textMenuu.text = args.grill
+        binding.textMenuu.text = args.boil
+        binding.textMenuu.text = args.simmer
+        binding.textMenuu.text = args.stir
+
 
         return binding.root
     }

@@ -45,6 +45,15 @@
         <argument
             android:name="grill"
             app:argType="string" />
+        <argument
+            android:name="boil"
+            app:argType="string" />
+        <argument
+            android:name="simmer"
+            app:argType="string" />
+        <argument
+            android:name="stir"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"

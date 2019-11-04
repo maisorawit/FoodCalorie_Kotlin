@@ -17,28 +17,30 @@ import kotlinx.android.synthetic.main.fragment_food_menu.*
 class FoodMenuFragment : Fragment() {
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentFoodMenuBinding>(inflater,
-            R.layout.fragment_food_menu, container, false)
+        val binding = DataBindingUtil.inflate<FragmentFoodMenuBinding>(
+            inflater,
+            R.layout.fragment_food_menu, container, false
+        )
 
         binding.apply {
-            buttonBoil.setOnClickListener{view ->
-                view.findNavController().navigate(R.id.action_foodMenuFragment_to_resultFragment)
+
+            buttonBoil.setOnClickListener {
+                goToIngrediantPage()
             }
 
-            buttonStir.setOnClickListener{view ->
-                view.findNavController().navigate(R.id.action_foodMenuFragment_to_resultFragment)
+            buttonStir.setOnClickListener {
+                goToIngrediantPage()
             }
 
-            buttonSimmer.setOnClickListener{view ->
-                view.findNavController().navigate(R.id.action_foodMenuFragment_to_resultFragment)
+            buttonSimmer.setOnClickListener {
+                goToIngrediantPage()
             }
 
-            buttonGrill.setOnClickListener{
+            buttonGrill.setOnClickListener {
                 goToIngrediantPage()
             }
         }
@@ -65,7 +67,7 @@ class FoodMenuFragment : Fragment() {
 //            )
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.setType("text/plain")
-            .putExtra(Intent.EXTRA_TEXT, getString(R.string.share_message,""))
+            .putExtra(Intent.EXTRA_TEXT, getString(R.string.share_message, ""))
         return shareIntent
     }
 
@@ -94,8 +96,14 @@ class FoodMenuFragment : Fragment() {
     }
 
     private fun goToIngrediantPage() {
-        val action = FoodMenuFragmentDirections.actionFoodMenuFragmentToResultFragment(grill = textView_grill.text.toString())
+        val action = FoodMenuFragmentDirections.actionFoodMenuFragmentToResultFragment(
+            grill = textView_grill.text.toString(),
+            boil = textView_boil.text.toString(),
+            simmer = textView_simmer.text.toString(),
+            stir = textView_stir.text.toString()
+        )
         NavHostFragment.findNavController(this).navigate(action)
+
     }
 
 
