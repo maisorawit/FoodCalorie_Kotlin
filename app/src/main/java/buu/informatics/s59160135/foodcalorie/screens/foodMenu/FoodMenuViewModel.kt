@@ -1,6 +1,7 @@
 package buu.informatics.s59160135.foodcalorie.screens.foodMenu
 
 import androidx.lifecycle.ViewModel
+import androidx.navigation.fragment.NavHostFragment
 
 class FoodMenuViewModel : ViewModel() {
 
@@ -20,5 +21,7 @@ class FoodMenuViewModel : ViewModel() {
         if(status == 3){ type = foodList[2]}
         if(status == 4){ type = foodList[3]}
     }
+
+
 
 }

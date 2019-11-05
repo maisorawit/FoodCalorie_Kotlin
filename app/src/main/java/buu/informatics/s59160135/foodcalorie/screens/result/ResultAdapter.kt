@@ -23,7 +23,7 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ViewHolder>(){
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.contentTextView1.text = data[position].name
         holder.contentTextView2.text = data[position].quality
-        holder.contentTextView3.text = data[position].cal
+        holder.contentTextView3.text = data[position].kcal
 
     }
 

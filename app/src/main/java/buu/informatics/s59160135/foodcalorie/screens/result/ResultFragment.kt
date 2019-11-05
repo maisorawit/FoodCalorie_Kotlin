@@ -31,11 +31,35 @@ class ResultFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(ResultViewModel::class.java)
 
         var args = ResultFragmentArgs.fromBundle(arguments!!)
-
-        binding.textMenuu.text = args.type
-
         val adapter = ResultAdapter()
-        adapter.replaceItems(viewModel.items)
+
+        if (args.type == "stir") {
+            adapter.replaceItems(viewModel.itemsStir)
+        }
+        if (args.type == "simmer") {
+            adapter.replaceItems(viewModel.itemsSimmer)
+        }
+        if (args.type == "boil") {
+            adapter.replaceItems(viewModel.itemsBoil)
+        }
+        if (args.type == "grill") {
+            adapter.replaceItems(viewModel.itemsGrill)
+        }
+        if (args.type == "soda") {
+            adapter.replaceItems(viewModel.itemsStir)
+        }
+        if (args.type == "coffee") {
+            adapter.replaceItems(viewModel.itemsStir)
+        }
+        if (args.type == "alcohol") {
+            adapter.replaceItems(viewModel.itemsStir)
+        }
+        if (args.type == "juice") {
+            adapter.replaceItems(viewModel.itemsJuice)
+        }
+
+//        binding.textMenuu.text = args.type
+
         binding.recycleview.adapter = adapter
 
 

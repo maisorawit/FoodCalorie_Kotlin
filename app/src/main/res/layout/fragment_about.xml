@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bgburger"
-        tools:context=".AboutFragment">
+        tools:context=".screens.about.AboutFragment">
 
         <TextView
             android:id="@+id/textView_foodCalorie"

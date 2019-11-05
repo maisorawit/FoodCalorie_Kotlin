@@ -1,4 +1,4 @@
-package buu.informatics.s59160135.foodcalorie
+package buu.informatics.s59160135.foodcalorie.screens.about
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import buu.informatics.s59160135.foodcalorie.R
 
 /**
  * A simple [Fragment] subclass.

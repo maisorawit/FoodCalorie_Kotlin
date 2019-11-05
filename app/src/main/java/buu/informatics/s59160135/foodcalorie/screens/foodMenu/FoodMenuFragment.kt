@@ -12,9 +12,7 @@ import androidx.navigation.fragment.NavHostFragment
 
 import buu.informatics.s59160135.foodcalorie.R
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
-import buu.informatics.s59160135.foodcalorie.screens.drinkMenu.DrinkMenuViewModel
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.fragment_food_menu.*
 
 class FoodMenuFragment : Fragment() {
 
@@ -37,22 +35,22 @@ class FoodMenuFragment : Fragment() {
 
             buttonBoil.setOnClickListener {
                 viewModel.status = 1
-                goToIngrediantPage()
+                goToResult()
             }
 
             buttonStir.setOnClickListener {
                 viewModel.status = 2
-                goToIngrediantPage()
+                goToResult()
             }
 
             buttonSimmer.setOnClickListener {
                 viewModel.status = 3
-                goToIngrediantPage()
+                goToResult()
             }
 
             buttonGrill.setOnClickListener {
                 viewModel.status = 4
-                goToIngrediantPage()
+                goToResult()
             }
         }
 
@@ -107,7 +105,7 @@ class FoodMenuFragment : Fragment() {
     }
 
 
-    private fun goToIngrediantPage() {
+    private fun goToResult() {
 
         viewModel.checkType()
         val action =
