@@ -1,21 +1,23 @@
-package buu.informatics.s59160135.foodcalorie
+package buu.informatics.s59160135.foodcalorie.screens.result
 
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.DataBindingUtil.setContentView
-import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
+import androidx.lifecycle.ViewModelProviders
+import buu.informatics.s59160135.foodcalorie.R
+//import buu.informatics.s59160135.foodcalorie.ResultFragmentArgs
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentResultBinding
-import kotlinx.android.synthetic.main.fragment_result.*
+import buu.informatics.s59160135.foodcalorie.screens.foodMenu.FoodMenuViewModel
 
 /**
  * A simple [Fragment] subclass.
  */
 class ResultFragment : Fragment() {
+
+    lateinit var viewModel: ResultViewModel
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,19 +28,22 @@ class ResultFragment : Fragment() {
             R.layout.fragment_result, container, false
         )
 
-
+        viewModel = ViewModelProviders.of(this).get(ResultViewModel::class.java)
 
         var args = ResultFragmentArgs.fromBundle(arguments!!)
 
         binding.textMenuu.text = args.type
 
-        getActivity()?.setTitle("Title Text");
+        val adapter = ResultAdapter()
+        adapter.replaceItems(viewModel.items)
+        binding.recycleview.adapter = adapter
+
+
 
 
 
         return binding.root
     }
-
 
 
 }
