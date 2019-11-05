@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_menu_drink"
-        tools:context=".Screens.DrinkMenu.DrinkMenuFragment">
+        tools:context=".screens.drinkMenu.DrinkMenuFragment">
 
         <Button
             android:id="@+id/button_juice"

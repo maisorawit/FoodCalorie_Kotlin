@@ -19,5 +19,7 @@
     <string name="text_name_about">Food Calorie</string>
     <string name="app_icon">foodicon</string>
     <string name="null_string" />
+    <string name="menu_drink">Drink</string>
+    <string name="menu_food">Food</string>
 </resources>
 <!--    %1$s-->

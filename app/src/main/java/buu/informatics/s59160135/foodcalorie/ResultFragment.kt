@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentResultBinding
 import kotlinx.android.synthetic.main.fragment_result.*
@@ -25,14 +26,14 @@ class ResultFragment : Fragment() {
             R.layout.fragment_result, container, false
         )
 
+
+
         var args = ResultFragmentArgs.fromBundle(arguments!!)
 
-        Log.i("check", args.grill)
+        binding.textMenuu.text = args.type
 
-        binding.textMenuu.text = args.grill
-        binding.textMenuu.text = args.boil
-        binding.textMenuu.text = args.simmer
-        binding.textMenuu.text = args.stir
+        getActivity()?.setTitle("Title Text");
+
 
 
         return binding.root

@@ -5,22 +5,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ResultFragment"
-        >
+        android:background="@drawable/menu"
+        tools:context=".ResultFragment">
 
         <TextView
             android:id="@+id/text_menuu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/null_string"
+            android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </layout>
 

@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/foodMenuFragment"
-        android:name="buu.informatics.s59160135.foodcalorie.FoodMenuFragment"
+        android:name="buu.informatics.s59160135.foodcalorie.screens.foodMenu.FoodMenuFragment"
         android:label="Food Menu"
         tools:layout="@layout/fragment_food_menu">
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/drinkMenuFragment"
-        android:name="buu.informatics.s59160135.foodcalorie.Screens.DrinkMenu.DrinkMenuFragment"
+        android:name="buu.informatics.s59160135.foodcalorie.screens.drinkMenu.DrinkMenuFragment"
         android:label="Drink Menu"
         tools:layout="@layout/fragment_drink_menu" >
         <action
@@ -40,19 +40,10 @@
     <fragment
         android:id="@+id/resultFragment"
         android:name="buu.informatics.s59160135.foodcalorie.ResultFragment"
-        android:label="fragment_result"
-        tools:layout="@layout/fragment_result" >
+        android:label="Menu"
+        tools:layout="@layout/fragment_result">
         <argument
-            android:name="grill"
-            app:argType="string" />
-        <argument
-            android:name="boil"
-            app:argType="string" />
-        <argument
-            android:name="simmer"
-            app:argType="string" />
-        <argument
-            android:name="stir"
+            android:name="type"
             app:argType="string" />
     </fragment>
     <fragment

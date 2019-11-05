@@ -55,14 +55,14 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
             android:layout_marginTop="50dp"
             android:contentDescription="@string/app_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_icon"
-            app:srcCompat="@drawable/dish" />
+            app:srcCompat="@drawable/icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
