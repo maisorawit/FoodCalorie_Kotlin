@@ -46,13 +46,13 @@ class ResultFragment : Fragment() {
             adapter.replaceItems(viewModel.itemsGrill)
         }
         if (args.type == "soda") {
-            adapter.replaceItems(viewModel.itemsStir)
+            adapter.replaceItems(viewModel.itemsSoda)
         }
         if (args.type == "coffee") {
-            adapter.replaceItems(viewModel.itemsStir)
+            adapter.replaceItems(viewModel.itemsCoffee)
         }
         if (args.type == "alcohol") {
-            adapter.replaceItems(viewModel.itemsStir)
+            adapter.replaceItems(viewModel.itemsAlcohol)
         }
         if (args.type == "juice") {
             adapter.replaceItems(viewModel.itemsJuice)
@@ -61,9 +61,6 @@ class ResultFragment : Fragment() {
 //        binding.textMenuu.text = args.type
 
         binding.recycleview.adapter = adapter
-
-
-
 
 
         return binding.root

@@ -7,11 +7,9 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import buu.informatics.s59160135.foodcalorie.R
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentDrinkMenuBinding
-import buu.informatics.s59160135.foodcalorie.screens.foodMenu.FoodMenuFragmentDirections
 import com.google.android.material.snackbar.Snackbar
 
 class DrinkMenuFragment : Fragment() {
@@ -29,23 +27,23 @@ class DrinkMenuFragment : Fragment() {
 
         binding.buttonJuice.setOnClickListener{
             viewModel.status = 1
-            goToIngrediantPage()
+            goToResult()
 
         }
 
         binding.buttonSoda.setOnClickListener{
             viewModel.status = 2
-            goToIngrediantPage()
+            goToResult()
         }
 
         binding.buttonCoffee.setOnClickListener{
             viewModel.status = 3
-            goToIngrediantPage()
+            goToResult()
         }
 
         binding.buttonAlcohol.setOnClickListener{
             viewModel.status = 4
-            goToIngrediantPage()
+            goToResult()
         }
 
         setHasOptionsMenu(true)
@@ -99,15 +97,13 @@ class DrinkMenuFragment : Fragment() {
     }
 
 
-    private fun goToIngrediantPage() {
+    private fun goToResult() {
 
         viewModel.checkType()
         val action =
             DrinkMenuFragmentDirections.actionDrinkMenuFragmentToResultFragment(
                 type = viewModel.type
-
             )
-
         NavHostFragment.findNavController(this).navigate(action)
 
     }

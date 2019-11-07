@@ -21,6 +21,38 @@ class ResultViewModel : ViewModel() {
         MyData("น้ำฝรั่ง", "1 กล่อง", "100 Kcal")
     )
 
+    val itemsCoffee = listOf(
+        MyData("กาแฟเย็น", "1 แก้ว", "317 kcal"),
+        MyData("โกโก้เย็น", "1 แก้ว", "334 kca"),
+        MyData("ชาเขียว(นม)เย็น", "1 แก้ว", "319 kcal"),
+        MyData("ชานมเย็น", "1 แก้ว", "319 kcal"),
+        MyData("นมเย็น	", "1 แก้ว", "425 kcal"),
+        MyData("โอเลี้ยง", "1 แก้ว", "103 kcal"),
+        MyData("ชาเย็นหรือชามะนาว", "1 แก้ว", "100 kcal")
+    )
+
+    val itemsAlcohol = listOf(
+        MyData("เบียร์กระป๋อง", "1 แก้ว", "148 kcal"),
+        MyData("ไวน์แดง ", "1 แก้ว", "80 kcal"),
+        MyData("สาเกญี่ปุ่น", "1 แก้ว", "105 kcal"),
+        MyData("เเชมเปญ", "1 แก้ว", "80 kcal"),
+        MyData("วิสกี้", "1 แก้ว", "65 kcal"),
+        MyData("วอดก้า", "1 แก้ว", "90 kcal"),
+        MyData("เตกีล่า", "1 แก้ว", "100 kcal"),
+        MyData("มาร์ตินี่", "1 แก้ว", "161 kcal")
+    )
+
+    val itemsSoda = listOf(
+        MyData("โค้ก", "1 ขวดเล็ก", "174 kcal"),
+        MyData("โค้ก", "1 กระป๋อง", "240 kcal"),
+        MyData("เอส", "1 กระป๋อง", "90 kcal"),
+        MyData("น้ำแดง", "1 ขวดเล็ก", "112 kcal"),
+        MyData("น้ำเขียว", "1 ขวดเล็ก", "109 kcal"),
+        MyData("น้ำส้ม", "1 ขวดเล็ก", "120 kcal"),
+        MyData("น้ำองุ่น", "1 ขวดเล็ก", "108 kcal")
+    )
+
+
     val itemsStir = listOf(
         MyData("ข้าวผัดกะเพราหมูกรอบ", "1 จาน", "650 Kcal"),
         MyData("ข้าวผัดกะเพรากุ้ง", "1 จาน", "540 Kcal"),
