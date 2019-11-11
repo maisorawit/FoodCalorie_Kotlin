@@ -28,7 +28,8 @@ class ResultViewModel : ViewModel() {
         MyData("ชานมเย็น", "1 แก้ว", "319 kcal"),
         MyData("นมเย็น	", "1 แก้ว", "425 kcal"),
         MyData("โอเลี้ยง", "1 แก้ว", "103 kcal"),
-        MyData("ชาเย็นหรือชามะนาว", "1 แก้ว", "100 kcal")
+        MyData("ชาเย็น", "1 แก้ว", "100 kcal"),
+        MyData("ชามะนาว", "1 แก้ว", "100 kcal")
     )
 
     val itemsAlcohol = listOf(
