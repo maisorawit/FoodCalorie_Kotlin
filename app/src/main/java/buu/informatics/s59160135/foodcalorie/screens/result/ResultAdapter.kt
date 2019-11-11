@@ -24,7 +24,6 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ViewHolder>(){
         holder.contentTextView1.text = data[position].name
         holder.contentTextView2.text = data[position].quality
         holder.contentTextView3.text = data[position].kcal
-
     }
 
     fun replaceItems(items: List<MyData>) {
