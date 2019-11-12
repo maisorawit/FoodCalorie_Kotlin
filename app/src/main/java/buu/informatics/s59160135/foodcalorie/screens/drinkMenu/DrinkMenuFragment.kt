@@ -42,7 +42,6 @@ class DrinkMenuFragment : Fragment() {
                 goToResult()
             }
         }
-        setHasOptionsMenu(true)
         return binding.root
     }
 

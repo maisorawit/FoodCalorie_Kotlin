@@ -1,4 +1,4 @@
-package buu.informatics.s59160135.foodcalorie
+package buu.informatics.s59160135.foodcalorie.screens.home
 
 
 import android.os.Bundle
@@ -6,12 +6,10 @@ import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import buu.informatics.s59160135.foodcalorie.databinding.FragmentFoodMenuBinding
+import buu.informatics.s59160135.foodcalorie.R
 import buu.informatics.s59160135.foodcalorie.databinding.FragmentHomeBinding
-import kotlin.math.log
 
 /**
  * A simple [Fragment] subclass.

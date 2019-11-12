@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="buu.informatics.s59160135.foodcalorie.HomeFragment"
+        android:name="buu.informatics.s59160135.foodcalorie.screens.home.HomeFragment"
         android:label="Food Calorie"
         tools:layout="@layout/fragment_home">
 

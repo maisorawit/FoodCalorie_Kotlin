@@ -46,7 +46,6 @@ class FoodMenuFragment : Fragment() {
                 goToResult()
             }
         }
-        setHasOptionsMenu(true)
         return binding.root
     }
 
